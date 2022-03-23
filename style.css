@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(53, 59, 57);
+  color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.Game-board{
+  border: 2px solid rgb(216, 208, 208);
+  height: 80%;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+  line-height: 60px;
+}
+
+h1{
+  text-align: center;
+  text-decoration:underline;
+  margin-bottom: 1rem;
+}
+
+
+h2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h3{
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+h4{
+  text-transform: uppercase;
+  font-size: 20px;
+ text-align: center;
+}
+
+b{
+  font-size: 1.2rem;
+  color: rgb(134, 113, 87);
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button{
+  padding: 0.2rem 0.8rem;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover{
+  background-color: rgb(121, 68, 3);
+}
+
+/* tab */
+@media screen and (max-width: 945px) {
+  .Game-board{
+    width: 80%;
+  }
+
+  h1{
+    color: rgb(182, 176, 189);
+  }
+}
+  
+/* small screen */
+@media screen and (max-width: 767px) {
+  .Game-board {
+    width: 50%;
+  }
+
+  h1 {
+    color: rgb(211, 164, 107);
+  }
+}
+
+
+
